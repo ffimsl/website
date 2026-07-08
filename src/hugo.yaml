@@ -1,8 +1,8 @@
-baseURL: 'http://localhost:1313/'
+baseURL: "http://localhost:1313/"
 title: TailBliss
 languageCode: en-us
 theme: tailbliss
-DefaultContentLanguage: en
+DefaultContentLanguage: de
 enableEmoji: true
 enableGitInfo: false
 enableRobotsTXT: true
@@ -24,17 +24,17 @@ markup:
       table: true
       taskList: true
       typographer:
-        apostrophe: '&rsquo;'
+        apostrophe: "&rsquo;"
         disable: false
-        ellipsis: '&hellip;'
-        emDash: '&mdash;'
-        enDash: '&ndash;'
-        leftAngleQuote: '&laquo;'
-        leftDoubleQuote: '&ldquo;'
-        leftSingleQuote: '&lsquo;'
-        rightAngleQuote: '&raquo;'
-        rightDoubleQuote: '&rdquo;'
-        rightSingleQuote: '&rsquo;'
+        ellipsis: "&hellip;"
+        emDash: "&mdash;"
+        enDash: "&ndash;"
+        leftAngleQuote: "&laquo;"
+        leftDoubleQuote: "&ldquo;"
+        leftSingleQuote: "&lsquo;"
+        rightAngleQuote: "&raquo;"
+        rightDoubleQuote: "&rdquo;"
+        rightSingleQuote: "&rsquo;"
     parser:
       attribute:
         block: false
@@ -112,17 +112,16 @@ params:
   social_media:
     github:
       enabled: true
-      url: 'https://github.com/nusserstudios'
+      url: "https://github.com/nusserstudios"
     facebook:
       enabled: true
-      url: 'https://facebook.com/nusserstudios'
+      url: "https://facebook.com/nusserstudios"
     instagram:
       enabled: true
-      url: 'https://instagram.com/nusserstudios'
+      url: "https://instagram.com/nusserstudios"
     twitter:
       enabled: true
-      url: 'https://twitter.com/nusserstudios'
-    
+      url: "https://twitter.com/nusserstudios"
 
 menu:
   main:
