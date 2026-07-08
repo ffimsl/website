@@ -1,3 +1,4 @@
 baseURL = 'https://ffi.ms/'
 locale = 'de-DE'
 title = 'Infrastruktur.ms'
+theme = "tailbliss"
