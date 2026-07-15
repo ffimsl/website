@@ -1,5 +1,11 @@
 # website
 
+## How to render prod version
+
+```bash
+hugo --gc --minify
+```
+
 ## How to run development
 
 ### required tools
