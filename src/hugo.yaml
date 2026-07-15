@@ -1,10 +1,10 @@
-baseURL: "http://localhost:1313/"
-title: TailBliss
-languageCode: en-us
+baseURL: "https://ffi.ms/"
+title: Infrastruktur.ms
+languageCode: de-DE
 theme: tailbliss
 DefaultContentLanguage: de
 enableEmoji: true
-enableGitInfo: false
+enableGitInfo: true
 enableRobotsTXT: true
 canonifyURLs: false
 pagination:
