@@ -88,6 +88,12 @@ params:
       url: "https://www.instagram.com/freifunkms/"
     twitter:
       enabled: false
+    forum:
+      enabled: true
+      url: "https://forum.freifunk-muensterland.de/c/ffi/16"
+    mail:
+      enabled: true
+      url: "mailto:vorstand@infrastruktur.ms"
 
 menu:
   main:
