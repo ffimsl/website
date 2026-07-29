@@ -158,11 +158,11 @@
             >
               {{ .Site.Params.P2.Heading }}
             </h2>
-            {{ range .Site.Params.P2.Content }}
-            <p class="pb-12 mt-6 text-lg text-gray-900 dark:text-white">
-              {{ .text }}
-            </p>
-            {{ end }}
+            <div class="mt-6 space-y-6">
+              {{ range .Site.Params.P2.Content }}
+              <p class="text-lg text-gray-900 dark:text-white">{{ .text }}</p>
+              {{ end }}
+            </div>
           </div>
         </div>
       </div>
