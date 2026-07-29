@@ -28,7 +28,7 @@ jobs:
           fetch-depth: 0
           lfs: false
 
-      - name: Create a local tools directory
+      - name: 📁 Create a local tools directory
         run: |
           mkdir -p "${HOME}/.local"
 
