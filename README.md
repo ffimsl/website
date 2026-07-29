@@ -3,6 +3,7 @@
 ## How to render prod version
 
 ```bash
+cd src
 hugo --gc --minify
 ```
 
