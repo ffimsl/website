@@ -62,34 +62,37 @@ params:
   disable_stay_uptodate: true
 
   p1:
-    heading: "Our mission"
+    heading: "Unsere Mission"
     image: "images/pages/our-mission.png"
     content:
       - text: >-
-          Sagittis scelerisque nulla cursus in enim consectetur quam.
-          Dictum urna sed consectetur neque tristique pellentesque.
-          Blandit amet, sed aenean erat arcu morbi.
-          Cursus faucibus nunc nisl netus morbi vel porttitor vitae ut.
-          Amet vitae fames senectus vitae.
+          Unser Schwerpunkt liegt auf Freifunk, einem gemeinschaftlich betriebenen
+          WLAN-Netz, das Menschen kostenlosen und unkomplizierten Internetzugang bietet.
+          Wir betreiben und erweitern dieses Netz ehrenamtlich -
+          in Wohnvierteln, öffentlichen Plätzen und sozialen Einrichtungen.
       - text: >-
-          Sollicitudin tristique eros erat odio sed vitae,
-          consequat turpis elementum.
-          Lorem nibh vel, eget pretium arcu vitae.
-          Eros eu viverra donec ut volutpat donec laoreet quam urna.
-          Sollicitudin tristique eroserat odio sed vitae,
-          consequat turpis elementum.
-          Lorem nibh vel, eget pretium arcu vitae.
-          Eros eu viverra donec ut volutpat donec laoreet quam urna.
-      - text: >-
-          Rhoncus nisl, libero egestas diam fermentum dui.
-          At quis tincidunt vel ultricies.
-          Vulputate aliquet velit faucibus semper.
-          Pellentesque in venenatis vestibulum consectetur nibh id.
-          In id ut tempus egestas.
-          Enim sit aliquam nec, a. Morbi enim fermentum lacus in. Viverra.
+          Wir verstehen uns bewusst nicht als reiner Freifunk-Verein.
+          Unser Engagement gilt offenen Infrastrukturen in einem breiteren Sinne:
+          Dezentralisierung, digitale Teilhabe und eine freie,
+          nicht-kommerzielle Vernetzung der Gesellschaft liegen uns am Herzen.
 
   p2:
-    disabled: true
+    heading: "Wie kann ich unterstützen?"
+    content:
+      - text: >-
+          Du möchtest freie Infrastruktur im Münsterland fördern?
+          Mit einer Spende hilfst du uns, neue Router anzuschaffen,
+          Serverkosten zu decken und das Freifunk-Netz weiterzubauen.
+          Jeder Betrag zählt - und als gemeinnütziger Verein stellen wir gerne eine Spendenquittung aus.
+      - text: >-
+          Tausch dich mit uns aus! In unserem Zulip-Chat diskutieren wir Technik,
+          planen neue Standorte und helfen uns gegenseitig bei Fragen rund um Freifunk und offene Netze.
+          Einfach registrieren und mitmachen - ob als stiller Mitleser oder aktiver Mitgestalter.
+      - text: >-
+          Am liebsten sehen wir dich persönlich bei einem unserer regelmäßigen Treffen.
+          Kein Vorwissen nötig - komm einfach vorbei, lern die Leute kennen und schau,
+          wie du dich einbringen kannst.
+          Termine und Treffpunkte findest du in unserem Forum und Zulip-Chat.
   p3:
     disabled: true
   p4:
