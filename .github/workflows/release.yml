@@ -38,7 +38,7 @@ jobs:
         with:
           node-version: ${{ env.NODE_VERSION }}
           cache: "pnpm"
-          cache-dependency-path: "src/themes/**/pnpm-lock.json"
+          cache-dependency-path: "src/themes/tailbliss/pnpm-lock.json"
 
       - name: 🏗️ Install Hugo
         run: |
