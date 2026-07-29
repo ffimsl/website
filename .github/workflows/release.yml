@@ -17,6 +17,7 @@ jobs:
     env:
       # Define tool versions
       HUGO_VERSION: 0.164.0
+      PNPM_VERSION: 11.14
       NODE_VERSION: 24.18.0
 
     steps:
@@ -26,6 +27,11 @@ jobs:
           submodules: recursive
           fetch-depth: 0
           lfs: false
+
+      - name: 📦 Setup pnpm
+        uses: pnpm/action-setup@v6
+        with:
+          version: ${{ env.PNPM_VERSION }}
 
       - name: 🟩 Install Node.js
         uses: actions/setup-node@v6
