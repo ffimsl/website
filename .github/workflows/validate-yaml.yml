@@ -12,9 +12,6 @@ jobs:
     steps:
       - name: 📥 Checkout repository
         uses: actions/checkout@v7
-      - uses: actions/setup-python@v7
-        with:
-          cache: "pip" # caching pip dependencies
       - name: 🛠️ Install yamllint
         run: pip install yamllint
       - name: ✅ Lint all YAML files
