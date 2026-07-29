@@ -28,6 +28,10 @@ jobs:
           fetch-depth: 0
           lfs: false
 
+      - name: Create a local tools directory
+        run: |
+          mkdir -p "${HOME}/.local"
+
       - name: 📦 Setup pnpm
         uses: pnpm/action-setup@v6
         with:
