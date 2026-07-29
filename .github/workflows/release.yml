@@ -18,20 +18,20 @@ jobs:
       NODE_VERSION: 24.18.0
 
     steps:
-      - name: Checkout repository
+      - name: 📥 Checkout repository
         uses: actions/checkout@v7
         with:
           submodules: recursive
           fetch-depth: 0
           lfs: false
 
-      - name: Install Node.js
+      - name: 🟩 Install Node.js
         uses: actions/setup-node@v6
         with:
           node-version: ${{ env.NODE_VERSION }}
           cache: "pnpm"
 
-      - name: Install Hugo
+      - name: 🏗️ Install Hugo
         run: |
           echo "Installing Hugo ${HUGO_VERSION}..."
           curl -sfL --output-dir "${{ runner.temp }}" -O "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_linux-amd64.tar.gz"
@@ -39,19 +39,19 @@ jobs:
           tar -C "${HOME}/.local/hugo" -xf "${{ runner.temp }}/hugo_${HUGO_VERSION}_linux-amd64.tar.gz"
           echo "${HOME}/.local/hugo" >> "${GITHUB_PATH}"
 
-      - name: Log tool versions
+      - name: 🔍 Log tool versions
         run: |
           echo "Logging tool versions..."
           command -v hugo &> /dev/null && echo "Hugo: $(hugo version)" || echo "Hugo: not installed"
           command -v node &> /dev/null && echo "Node.js: $(node --version)" || echo "Node.js: not installed"
 
-      - name: Install CSS dependencies and build CSS
+      - name: 🎨 Install CSS dependencies and build CSS
         working-directory: src/themes/tailbliss
         run: |
           pnpm install
           pnpm run build:css
 
-      - name: Cache restore
+      - name: ♻️ Cache restore
         id: cache-restore
         uses: actions/cache/restore@v6
         with:
@@ -59,11 +59,11 @@ jobs:
           key: hugo-${{ github.run_id }}
           restore-keys: hugo-
 
-      - name: Copy built CSS to static directory
+      - name: 📋 Copy built CSS to static directory
         working-directory: src
         run: cp themes/tailbliss/static/css/main.*.css static/css/
 
-      - name: Build Hugo (production)
+      - name: 🚀 Build Hugo (production)
         working-directory: src
         run: |
           echo "Building the project..."
@@ -72,16 +72,16 @@ jobs:
             --minify \
             --cacheDir "${{ runner.temp }}/.cache/hugo"
 
-      - name: Cache save
+      - name: 💾 Cache save
         uses: actions/cache/save@v6
         with:
           path: ${{ runner.temp }}/.cache/hugo
           key: ${{ steps.cache-restore.outputs.cache-primary-key }}
 
-      - name: Create release archive
+      - name: 📦 Create release archive
         run: tar -czf website-${{ github.ref_name }}.tar.gz -C src/public .
 
-      - name: Create GitHub Release
+      - name: 🎉 Create GitHub Release
         uses: softprops/action-gh-release@3d0d9888cb7fd7b750713d6e236d1fcb99157228 # v3.0.2
         with:
           files: website-${{ github.ref_name }}.tar.gz
