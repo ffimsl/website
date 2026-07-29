@@ -56,7 +56,8 @@ params:
   description: >-
     Wir haben den Förderverein am 22. November 2015 gegründet,
     um offene Netzwerk-Infrastrukturen im Münsterland zu fördern.
-    Dazu gehört zur Zeit vor allem Freifunk, aber wir sind bewusst nicht darauf beschränkt.
+    Dazu gehört zur Zeit vor allem Freifunk, aber wir sind
+    bewusst nicht darauf beschränkt.
   disable_theme_toggle: false
   disable_stay_uptodate: true
 
@@ -71,10 +72,12 @@ params:
           Cursus faucibus nunc nisl netus morbi vel porttitor vitae ut.
           Amet vitae fames senectus vitae.
       - text: >-
-          Sollicitudin tristique eros erat odio sed vitae, consequat turpis elementum.
+          Sollicitudin tristique eros erat odio sed vitae,
+          consequat turpis elementum.
           Lorem nibh vel, eget pretium arcu vitae.
           Eros eu viverra donec ut volutpat donec laoreet quam urna.
-          Sollicitudin tristique eroserat odio sed vitae, consequat turpis elementum.
+          Sollicitudin tristique eroserat odio sed vitae,
+          consequat turpis elementum.
           Lorem nibh vel, eget pretium arcu vitae.
           Eros eu viverra donec ut volutpat donec laoreet quam urna.
       - text: >-
