@@ -1,0 +1,23 @@
+---
+name: ✅ Check for Linting GitHub Action
+
+# yamllint disable-line rule:truthy
+on:
+  push:
+    paths:
+      - .github/**.yml
+      - .github/**.yaml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lint-github-actions:
+    name: 🔍 Run GitHub Action Linter
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🛠 Checkout Code
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: 🔍 Run actionlint
+        uses: docker://rhysd/actionlint:1.7.12@sha256:b1934ee5f1c509618f2508e6eb47ee0d3520686341fec936f3b79331f9315667
+        with:
+          args: -color
