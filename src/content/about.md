@@ -36,3 +36,9 @@ Eine weitere Möglichkeit: [Antrag](https://github.com/ffimsl/Dokumente/raw/mast
 ## Kontakt
 
 vorstand (at) infrastruktur.ms
+
+## Technische Umsetzung
+
+- Statisches Website Rendering mit Hugo: [https://gohugo.io](https://gohugo.io)
+- Hugo Theme:
+  - tailbliss: [https://themes.gohugo.io/themes/tailbliss/](https://themes.gohugo.io/themes/tailbliss/)
